@@ -1,0 +1,42 @@
+Data Control Language (DCL) in SQL is used to manage permissions and control access to database objects,
+ensuring that only authorized users can perform specific actions. 
+The primary DCL commands are GRANT and REVOKE.
+
+************** DCL *******************
+
+// --- 1. GRANT
+          The GRANT command provides specific privileges to users on database objects, such as tables, views, or the entire database.
+          Permissions can include actions like 
+          SELECT, INSERT, UPDATE, DELETE, and more.
+
+
+1------ GRANT---------- 
+     1--- GRANT SELECT ON Employees TO User1;     ///  Granting SELECT Privilege
+
+
+    2--- GRANT SELECT, INSERT, UPDATE ON Employees TO User1;   ///  Granting Multiple Privileges
+
+    3--- GRANT ALL ON Employees TO User1;  /// Granting All Privileges
+
+
+
+//---2. REVOKE
+        The REVOKE command removes specific privileges from users on database objects.
+        This is useful for restricting access when certain permissions are no longer needed
+
+
+1------REVOKE--------
+
+    1---REVOKE SELECT ON Employees FROM User1;
+
+
+    2---REVOKE INSERT, UPDATE ON Employees FROM User1;     ///  Granting Multiple Privileges
+
+
+    3---REVOKE ALL ON Employees FROM User1;           /// Granting All Privileges
+
+
+
+                                              
+
+   
