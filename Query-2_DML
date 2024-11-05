@@ -37,6 +37,11 @@ The SELECT command retrieves data from one or more tables. You can use it to spe
    2--- DELETE FROM Employees
         WHERE Position = 'Intern';
 
+   3--- Delete TABLE Employees;                  (Using DELETE without Conditions // deteled table data with struchure )
+           
+
+   4--- DELETE FROM Employees                    (Using DELETE with Conditions // delete only depend on specific condintion)
+        WHERE EmployeeID = 1;
 
 
 
