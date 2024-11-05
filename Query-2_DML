@@ -1,0 +1,46 @@
+The SELECT command retrieves data from one or more tables. You can use it to specify which columns to fetch and apply conditions to filter rows.
+
+******* *******   DML *******
+
+1 --------- SELECT ----------
+   1--- SELECT * FROM Employees
+
+   2--- SELECT FirstName, LastName
+        FROM Employees;
+
+   3--- SELECT * FROM Employees
+        WHERE Position = 'Manager';
+
+   4--- SELECT Position, COUNT(*) AS Count      // ( Using Aggregations and Grouping )
+        FROM Employees
+        GROUP BY Position;
+
+2-------- INSERT--------------
+   1--- INSERT INTO Employees (EmployeeID, FirstName, LastName, Position, Salary)
+        VALUES (1, 'John', 'Doe', 'Manager', 75000.00);
+
+
+3-------- UPDATE --------------
+   1--- UPDATE Employees
+        SET Salary = 80000
+        WHERE EmployeeID = 1;
+
+   2---UPDATE Employees
+       SET Position = 'Senior Developer'
+       WHERE Position = 'Developer';
+
+
+4-------- DELETE --------------
+   1--- DELETE FROM Employees
+        WHERE EmployeeID = 1;
+
+   2--- DELETE FROM Employees
+        WHERE Position = 'Intern';
+
+
+
+
+
+
+
+
