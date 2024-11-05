@@ -50,13 +50,5 @@ DELETE FROM Employees WHERE EmployeeID = 1;
 
       3--- DROP Database AIASL;
 
-3 ------------- DELETE ------------
-
-      1--- Delete TABLE Employees;                  (Using DELETE without Conditions // deteled table data with struchure )
-           
-
-      2--- DDELETE FROM Employees                    (Using DELETE with Conditions // delete only depend on specific condintion)
-           WHERE EmployeeID = 1;
-
 
 
