@@ -1,0 +1,62 @@
+--Create Database  AIASL
+
+use AIASL;
+-- Creating a table
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName NVARCHAR(50),
+    LastName NVARCHAR(50),
+    Position NVARCHAR(50),
+    Salary DECIMAL(10, 2)
+);
+go
+
+-- Inserting data
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Position, Salary)
+VALUES (1, 'John', 'Doe', 'Manager', 75000.00);
+
+-- Selecting data
+SELECT * FROM Employees WHERE Salary > 50000;
+
+-- Updating data
+UPDATE Employees SET Salary = Salary + 5000 WHERE EmployeeID = 1;
+
+-- Deleting data
+DELETE FROM Employees WHERE EmployeeID = 1;
+
+
+************  DDL  ***************
+
+1 -------------Create ------------
+
+      1--- Create Badabase AIASL 
+
+      2--- Create table  Employees
+ 
+2 ------------- ALTER ------------
+
+      1--- ALTER TABLE Employees
+           ADD DateOfBirth DATE;
+
+      2--- ALTER TABLE Employees
+           ALTER COLUMN Position NVARCHAR(100);    (Modifying an Existing Column as per Required)
+
+3 ------------- DROP ------------
+
+      1--- DROP TABLE Employees;
+
+      2--- ALTER TABLE Employees                      (Drop an Existing Column as per Required)
+           Drop COLUMN Position;
+
+      3--- DROP Database AIASL;
+
+3 ------------- DELETE ------------
+
+      1--- Delete TABLE Employees;                  (Using DELETE without Conditions // deteled table data with struchure )
+           
+
+      2--- DDELETE FROM Employees                    (Using DELETE with Conditions // delete only depend on specific condintion)
+           WHERE EmployeeID = 1;
+
+
+
